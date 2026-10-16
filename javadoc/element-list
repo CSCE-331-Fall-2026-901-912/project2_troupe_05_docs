@@ -1,0 +1,5 @@
+module:com.sharetea.app
+com.sharetea.app
+com.sharetea.app.common
+com.sharetea.app.controllers
+com.sharetea.app.db
