@@ -92,9 +92,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Class</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="MenuController.IngredientUsage.html" class="type-name-link" title="class in com.sharetea.app.controllers">MenuController.IngredientUsage</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">Stores information for an ingredient with how much quantity is used</div>
+</div>
+<div class="col-first odd-row-color"><code>static class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="MenuController.InventoryIngredient.html" class="type-name-link" title="class in com.sharetea.app.controllers">MenuController.InventoryIngredient</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">Represents an ingredient from inventory available for a menu item.</div>
+</div>
+<div class="col-first even-row-color"><code>static class&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="MenuController.MenuItem.html" class="type-name-link" title="class in com.sharetea.app.controllers">MenuController.MenuItem</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Handles the data for each menu item</div>
+<div class="block">Represents a single menu item displayed in the menu table.</div>
 </div>
 </div>
 </section>
@@ -126,7 +136,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initialize()" class="member-name-link">initialize</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Initializes the variables for each item</div>
+<div class="block">Initializes the menu page controls and loads the initial menu data.</div>
 </div>
 </div>
 </div>
@@ -163,7 +173,9 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="initialize()">
 <h3>initialize</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">initialize</span>()</div>
-<div class="block">Initializes the variables for each item</div>
+<div class="block">Initializes the menu page controls and loads the initial menu data.
+ This method configures the table columns, loads categories and menu items,
+ wires action listeners, and prepares the ingredient editor.</div>
 </section>
 </li>
 </ul>

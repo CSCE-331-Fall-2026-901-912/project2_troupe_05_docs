@@ -3,3 +3,4 @@ com.sharetea.app
 com.sharetea.app.common
 com.sharetea.app.controllers
 com.sharetea.app.db
+com.sharetea.app.dialogs

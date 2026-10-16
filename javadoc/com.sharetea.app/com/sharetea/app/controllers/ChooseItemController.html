@@ -96,7 +96,9 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final record&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="ChooseItemController.Item.html" class="type-name-link" title="class in com.sharetea.app.controllers">ChooseItemController.Item</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">Represents an item available in the system with an ID, name, and price.</div>
+</div>
 </div>
 </section>
 </li>
@@ -127,19 +129,30 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCategory(int,java.lang.String)" class="member-name-link">setCategory</a><wbr>(int&nbsp;categoryId,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;categoryName)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the current category, updates the category label, and loads items 
+ belonging to the specified category from the database.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCurrentOrder(java.util.List)" class="member-name-link">setCurrentOrder</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;currentOrder)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the current order list and updates the order list view.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOnBack(java.lang.Runnable)" class="member-name-link">setOnBack</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;callback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the callback to be invoked when the back action is triggered.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setOnItemAdded(java.util.function.Consumer)" class="member-name-link">setOnItemAdded</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ChooseItemController.Item.html" title="class in com.sharetea.app.controllers">ChooseItemController.Item</a>&gt;&nbsp;callback)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Set the callback to be invoked when an item is added.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTransactionId(int)" class="member-name-link">setTransactionId</a><wbr>(int&nbsp;transactionId)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the active transaction identifier.</div>
+</div>
 </div>
 </div>
 </div>
@@ -175,24 +188,44 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="setOnItemAdded(java.util.function.Consumer)">
 <h3>setOnItemAdded</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setOnItemAdded</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html" title="class or interface in java.util.function" class="external-link">Consumer</a>&lt;<a href="ChooseItemController.Item.html" title="class in com.sharetea.app.controllers">ChooseItemController.Item</a>&gt;&nbsp;callback)</span></div>
+<div class="block">Set the callback to be invoked when an item is added.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>callback</code> - the consumer to be called with the added item, or null to clear</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setOnBack(java.lang.Runnable)">
 <h3>setOnBack</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setOnBack</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;callback)</span></div>
+<div class="block">Sets the callback to be invoked when the back action is triggered.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>callback</code> - the runnable to be executed on back, or null to clear</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setCurrentOrder(java.util.List)">
 <h3>setCurrentOrder</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCurrentOrder</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;currentOrder)</span></div>
+<div class="block">Sets the current order list and updates the order list view.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>currentOrder</code> - the list of string representations of the current order items</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setTransactionId(int)">
 <h3>setTransactionId</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTransactionId</span><wbr><span class="parameters">(int&nbsp;transactionId)</span></div>
+<div class="block">Sets the active transaction identifier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>transactionId</code> - the unique identifier of the transaction</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -201,9 +234,14 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCategory</span><wbr><span class="parameters">(int&nbsp;categoryId,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;categoryName)</span>
                  throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Sets the current category, updates the category label, and loads items 
+ belonging to the specified category from the database.</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>categoryId</code> - the unique identifier of the category</dd>
+<dd><code>categoryName</code> - the name of the category to display</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code> - if a database access error occurs</dd>
 </dl>
 </section>
 </li>
